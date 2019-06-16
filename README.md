@@ -59,5 +59,3 @@ Once you installed Static just follow the following steps:
 
 ## Credits and copyrights
 Under GNU license
-
-Created by Chopin (aka Root)
