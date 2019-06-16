@@ -59,3 +59,5 @@ Once you installed Static just follow the following steps:
 
 ## Credits and copyrights
 Under GNU license
+
+Writing new things into my docs...
