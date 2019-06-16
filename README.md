@@ -49,7 +49,7 @@ This is an Open Source app that YOU can contribute! Just follow these steps:
 4. Make a pull request
 5. You will be notified when your code has been reviewed / merged
 
-## Quickstart
+## Quick start
 
 Once you installed Static just follow the following steps:
 1. Run `static new <sitename> <template-name>` and follow the setup
