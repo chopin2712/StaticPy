@@ -21,7 +21,7 @@ You will need only few basic things:
 ### Install for Linux
 This is how to install this app, just run the following commands:
 ```
-git clone http://localhost:3000/root/Static.git
+git clone http://192.168.1.36:3000/root/Static.git
 cd Static
 python3.7 static.py
 ```
