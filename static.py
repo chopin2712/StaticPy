@@ -26,3 +26,5 @@ while i != 0:
                 open(filename)
                 print(line.replace(v, a), end='')
         i = i + 1
+
+# Publish script
