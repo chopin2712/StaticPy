@@ -83,3 +83,5 @@ pulish = input("How do you want to publish your website? ")
 
 if publish == 0:
     print("Your files are in the output directory")
+else:
+    print("Cannot continue, please wait the next release")
