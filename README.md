@@ -28,7 +28,7 @@ This is how to install this app, just run the following commands:
 ```
 git clone http://localhost:3000/root/Static.git
 cd Static/install
-sudo sh install.sh
+sudo python3.7 static.py
 ```
 
 ## Contribute
