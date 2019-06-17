@@ -22,7 +22,9 @@ if secure == 0:
         new_home = input("Do you want to create a new home page? [Y, n] ")
 
         if new_home == 'y' or new_home == 'Y':
-            print("Working 1")
+            file = open("index.html", "a")
+            file.close()
+            print("Index.html file created")
             w = 0
         elif new_home == 'n' or new_home == 'N':
             print("working 2")
