@@ -4,3 +4,4 @@ secure
 var.txt.bak
 test.*
 dir.txt
+*.np
