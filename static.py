@@ -1,0 +1,11 @@
+sitename = input("What is your sitename? ")
+file = open("var", "a")
+file.write(sitename)
+file.write("\n")
+file.close()
+
+template = input("What is your template name? ")
+file = open("var", "a")
+file.write(template)
+file.write("\n")
+file.close()
