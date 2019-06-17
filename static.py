@@ -31,7 +31,7 @@ file.close()
 # template selector, to-do
 template = 'cmd'
 
-# File selector
+# File finder
 i = 1
 while i != 0:
     os.chdir(path)
@@ -40,9 +40,9 @@ while i != 0:
     if l == '':
         i = 0
     else:
-        print(l)
+        print(i, l)
         i = i + 1
-
+# File selector
 filename = input("What file do you want to use? ")
 file = open("dir.txt", "a")
 file.write("/")
