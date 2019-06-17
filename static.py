@@ -42,7 +42,7 @@ file.close()
 
 # template selector, to-do
 template = 'cmd'
-
+# MILESTONE ALGO
 # File finder
 i = 1
 while i != 0:
