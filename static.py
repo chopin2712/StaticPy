@@ -92,7 +92,6 @@ if filename == "index":
     file.write("")
 else:
     file.write("/")
-    file.write(filename)
 
 file.close()
 file = open("cp.txt", "r")
@@ -117,6 +116,8 @@ while i != 0:
                 open(filename)
                 print(line.replace(v, a), end='')
         i = i + 1
+name = input("What is the name of your", filename, "? ")
+
 
 # Publish script
 print("0 : I don't what to pulish, I just need the files")
