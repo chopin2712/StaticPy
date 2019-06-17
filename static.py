@@ -1,4 +1,10 @@
 # Need some update before (here)
+import fileinput
+
+with fileinput.FileInput("var.txt", inplace=True, backup='.bak') as file:
+    for line in file:
+        print(line.replace("a", "d"), end='')
+
 import linecache
 
 i = 1
