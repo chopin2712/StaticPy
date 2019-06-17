@@ -3,7 +3,7 @@ file = open("secure", "r")
 secure = file.read()
 file.close()
 
-while secure == 0:
+if secure == 0:
     # The sitename variable is always in first line
     sitename = input("What is your sitename? ")
     file = open("var", "a")
