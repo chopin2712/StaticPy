@@ -22,7 +22,7 @@ You will need only few basic things:
 This is how to install this app, just run the following commands:
 ```
 git clone http://localhost:3000/root/Static.git
-cd Static/install
+cd Static
 python3.7 static.py
 ```
 
