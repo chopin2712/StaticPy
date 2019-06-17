@@ -1,5 +1,9 @@
 # Static - Static website generator
+
 ![Header](http://image-missing.org/image.png)
+
+## DO NOT USE THIS! THIS IS A FULLY EXPERIMENTAL VERSION!
+
 A painless static website generator for you. Very lightweight to be easy, secure and low CPU usage alternative to Wordpress and Jekyll, without need to have database and other stuff.
 
 Works also using IPFS
