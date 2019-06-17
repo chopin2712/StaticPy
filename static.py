@@ -9,6 +9,8 @@ for root, dirs, files in os.walk("./template"):
         print(filename)
 filename = input("What file do you want to use? ")
 
+# Copy the content files to the main output dir
+
 # Replace variables from var to selected file.
 i = 1
 while i != 0:
