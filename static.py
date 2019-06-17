@@ -47,7 +47,7 @@ if secure == 0:
         else:
             print("Not valid answer.")
             w = 1
-
+    
     w = 1
         while w == 1:
             new_post = input("Do you want to create a first post? [Y, n] ")
