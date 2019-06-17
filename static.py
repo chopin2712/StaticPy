@@ -68,11 +68,18 @@ print(path)
 os.system("ls")
 # Help needed
 
-# Delete current file
+file.close()
+file = open("cp.txt", "w")
+file.write("")
+file.close()
 
 file = open("cp.txt", "a")
 file.write("cp -r ")
 file.write(path)
+
+if filename == "index":
+    file.write("/*")
+
 file.write(" ")
 file.write(oripath)
 file.write("/output")
@@ -83,9 +90,11 @@ else:
     file.write("/")
     file.write(filename)
 
-# Chaning file as read
-# Set run as file
-# Execute using os run
+file.close()
+file = open("cp.txt", "r")
+run = file.read()
+print("run is ", run)
+os.system(run)
 
 # Replace variables from var to selected file.
 i = 1
@@ -110,7 +119,8 @@ print("0 : I don't what to pulish, I just need the files")
 print("1 : Using IPFS")
 print("2 : Using FTP")
 print("3 : Locally")
-pulish = input("How do you want to publish your website? ")
+
+publish = input("How do you want to publish your website? ")
 
 if publish == 0:
     print("Your files are in the output directory")
