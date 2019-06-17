@@ -14,8 +14,20 @@ file = open("dir.txt", "r")
 file.close()
 file = open("dir.txt", "a")
 file.write(os.getcwd())
+# Save the original path as oripath
+file.close()
+file = open("dir.txt", "r")
+oripath = file.read()
+file.close()
+
+# Adding template folders into it
+file = open("dir.txt", "a")
 file.write("/template/")
+
+# Template finder
 template = 'cmd'
+
+# Adding template to file
 file.write(template)
 file.close()
 # Set path as file
@@ -40,7 +52,7 @@ while i != 0:
     if l == '':
         i = 0
     else:
-        print(i, l)
+        print(l)
         i = i + 1
 # File selector
 filename = input("What file do you want to use? ")
@@ -55,6 +67,11 @@ os.chdir(path)
 print(path)
 os.system("ls")
 # Help needed
+
+# Create a file
+# Add "cp -r " into it
+# Add the var path into it
+#
 
 # Replace variables from var to selected file.
 i = 1
