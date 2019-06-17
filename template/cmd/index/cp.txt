@@ -1,0 +1,1 @@
+cp -r /home/chopin/Git/Static/template/cmd/index /home/chopin/Git/Static/output

@@ -68,10 +68,24 @@ print(path)
 os.system("ls")
 # Help needed
 
-# Create a file
-# Add "cp -r " into it
-# Add the var path into it
-#
+# Delete current file
+
+file = open("cp.txt", "a")
+file.write("cp -r ")
+file.write(path)
+file.write(" ")
+file.write(oripath)
+file.write("/output")
+
+if filename == "index":
+    file.write("")
+else:
+    file.write("/")
+    file.write(filename)
+
+# Chaning file as read
+# Set run as file
+# Execute using os run
 
 # Replace variables from var to selected file.
 i = 1
