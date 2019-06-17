@@ -66,24 +66,28 @@ path = file.read()
 os.chdir(path)
 print(path)
 os.system("ls")
-# Help needed
 
+# Delete content of the ancient file
 file.close()
 file = open("cp.txt", "w")
 file.write("")
 file.close()
 
+# Writting the beggining of the comment cp -r path1
 file = open("cp.txt", "a")
 file.write("cp -r ")
 file.write(path)
 
+# Exception for index file
 if filename == "index":
     file.write("/*")
 
+# Adding the end of the command cp -r path1 path2
 file.write(" ")
 file.write(oripath)
 file.write("/output")
 
+# Excepetion for index file
 if filename == "index":
     file.write("")
 else:
