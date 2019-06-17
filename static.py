@@ -1,3 +1,6 @@
+if var
+
+# The sitename variable is always in first line
 sitename = input("What is your sitename? ")
 file = open("var", "a")
 file.write(sitename)
