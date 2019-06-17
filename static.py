@@ -4,7 +4,7 @@ i = 1
 while i != 0:
     open("var.txt", "r")
     v = linecache.getline('var.txt', i)
-    if v == '':
+    if v == '': # Nothing as end of vars
         i = 0
     else:
         print("What is the variable ",v)
