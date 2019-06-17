@@ -1,1 +1,9 @@
-Comment fdire des crèpes ?
+{% home-url %}
+{% page-1 %}
+{% TITLE %}
+{% Text-1 %}
+{% TITLE-2 %}
+{% Text-2 %}
+{% YOURNAME %}
+{% NETWORK-URL %}
+{% NETWORK-NAME %}
