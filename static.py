@@ -16,5 +16,7 @@ while i != 0:
     else:
         print("What is the variable ",v)
         a = input("[Type e for getting your editor]")
-        # Replace v by a in the template document
+        with fileinput.FileInput("var.txt", inplace=True, backup='.bak') as file:
+            for line in file:
+                print(line.replace(v, a), end='')
         i = i + 1
