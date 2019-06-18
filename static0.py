@@ -80,33 +80,36 @@ elif filename == page:
     file.write(name)
 else:
     name = input("What is your ", filename, "??? ")
-#   add /output/
-#   add name
-# MILETONE 89 WARNING BLOCK 89
-# Close file
+    file.write("/output/")
+    file.write(name)
+    file.close()
 
-# Open cp.txt in read mode
-# Run > cp.txt
-# os.system(run)
-# Close the file cp.txt
+file = open("cp.txt", "r")
+run = file.read()
+os.system(run)
+file.close()
 
-# mettre i à 1
-# Tant que i n'est pas égal à zero
-#   Aller à path (to test, facultative)
-#   Open var.txt in read mode
-#   mettre variable v à la valeur de la ligne i dans le document var v = linecache.getline('var.txt', i)
-#   If v vaut rien
-#       Mettre i à 0
-#   Else:
-#       Write  what is the variable v
-#       Mettre a à Ask type e for getting your editor
+i = 1
+while i != 0:
+    os.chdir(path) #   Aller à path (to test, facultative)
+    file = open("var.txt", "r")
+    v = linecache.getline('var.txt', i)
+    if v == '':
+        i = 0
+    else:
+        print("What is the value of variable", v)
+        a = input("[Type e for getting your editor]")
+        if a == "e":
+            # OPEN EDITOR
+
+
 #       Remplacer v par e dans le document filename.html :
-#       with fileinput.FileInput("*.html", inplace=True, backup='.bak') as file:
-#           for line in file:
-#               os.chdir(path)
-#               open(filename)
-#               print(line.replace(v, a), end='')
-#       i = i + 1
+        with fileinput.FileInput("*.html", inplace=True, backup='.bak') as file:
+            for line in file:
+                os.chdir(path)
+                open(filename)
+                print(line.replace(v, a), end='')
+        i = i + 1
 
 
 # Print the differents whays to get the script
@@ -116,6 +119,6 @@ print("2 : Using FTP")
 print("3 : Locally")
 
 # Skip the last part for the moment
-# Publish = Ask how to publish your changes
-# If publish = 0 says that the result is in the output directory
-#
+publish = input("How to you what to upload your changes")
+if publish == '0':
+    print("DONE: Your result is in the output directory")
