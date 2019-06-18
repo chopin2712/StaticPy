@@ -23,35 +23,43 @@ os.system("ls -d */")
 template = input("Which template do you choose? ")
 
 # The following line is experimental
-file = open(oripath, "dir.txt", "a") # Ouvrir oripath/dir.txt en a
+
+file = open("dirpath.txt", "w")
+file.write("")
+file.close()
+file = open("dirpath.txt", "a")
+file.write(oripath)
+file.write("/dir.txt")
+file.close()
+file = open("dirpath.txt", "r")
+dirpath = file.read()
+file.close()
+
+file = open(dirpath, "a") # Ouvrir oripath/dir.txt en a
+file.write("/")
 file.write(template)
 file.close()
 
-file = open("dir.txt", "r")
+file = open(dirpath, "r")
 os.chdir(file.read())
 
-# Dire voici les items disponibles :
-# Lister tout les dossiers
-# Demander : QUel item choisissez vous
-# Mettre cette variable en "filename"
+print("This is the avaiable items:")
+os.system("ls -d */")
+filename = input("What item do you want: ")
 
-# This is line 57
+file = open("dir.txt", "a")
+file.write("/")
+file.write(filename)
+file.close()
 
-# Ouvrir dir.txt en append
-# Ajouter /
-# Ajouter la variable filename
-# Fermer le fichier
+file = open("dir.txt", "r")
+path = file.read()
+os.chdir(path)
+file.close()
 
-# Ouvir le fichier en read
-# Mettre fichier en path
-# Aller à path
-# Fermer le fichier
-
-# Open file cp.txt in w
-# Empty it
-# Close it
-
-# MILESTONE 75
+file = open("cp.txt", "w")
+file.write("")
+file.close()
 
 # Open the cp.txt file in a
 # add "cp -r "
