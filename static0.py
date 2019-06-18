@@ -34,7 +34,6 @@ file.close()
 file = open("dirpath.txt", "r")
 dirpath = file.read()
 file.close()
-
 file = open(dirpath, "a") # Ouvrir oripath/dir.txt en a
 file.write("/")
 file.write(template)
@@ -61,25 +60,26 @@ file = open("cp.txt", "w")
 file.write("")
 file.close()
 
-# Open the cp.txt file in a
-# add "cp -r "
-# add path
+file = open("cp.txt", "a")
+file.write("cp -r ")
+file.write(path)
 
-# Si Filename = index or filename = page so:
-#   Add /*
-# Else:
-#   Add post
-# MILESTONE 84
-# Add " "
-# add oripath
-# If filename == index :
-#   add /output
-# Elif filename == page :
-# Mettre name by asking what is the name of your, filename, ??? "
-#   add /output/
-#   add name
-# Else :
-#   Mettre name by asking what is the name of your, filename, ??? "
+if filename == index or filename == page:
+    file.write("/*")
+else:
+    file.write(post)
+
+file.write(" ")
+file.write(oripath)
+
+if filename == index:
+    file.write("/output")
+elif filename == page:
+    name = input("what is your ", filename, "??? ")
+    file.write("/output/")
+    file.write(name)
+else:
+    name = input("What is your ", filename, "??? ")
 #   add /output/
 #   add name
 # MILETONE 89 WARNING BLOCK 89
