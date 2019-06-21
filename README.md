@@ -2,13 +2,13 @@
 
 ![Header](http://image-missing.org/image.png)
 
+## Warning
+This repository is not already finished, so most of the promise in this file are not made yet. To see what have been done, go into the file static0.py
+
+
 A painless static website generator for you. Very lightweight to be easy, secure and low CPU usage alternative to WordPress and Jekyll, without need to have database and other stuff.
 
-## DO NOT USE THIS! THIS IS A FULLY EXPERIMENTAL VERSION!
-
-A painless static website generator for you. Very lightweight to be easy, secure and low CPU usage alternative to Wordpress and Jekyll, without need to have database and other stuff.
-
-Works also using IPFS
+* WIll also Works also using IPFS
 
 A very clear and lightweight setup, exclusively for Linux users.
 
@@ -29,9 +29,9 @@ You will need only few basic things:
 ### Install for Linux
 This is how to install this app, just run the following commands:
 ```
-git clone http://192.168.1.36:3000/root/Static.git
-cd Static
-python3.7 static.py
+git clone https://github.com/chopin2712/StaticPy.git
+cd StaticPy
+python3.7 static0.py
 ```
 
 ## Contribute
@@ -60,4 +60,4 @@ Once you installed Static just follow the following steps:
 3. Choose your uploading way.
 
 ## Credits and copyrights
-Under GNU license
+Under GNUv3 license
