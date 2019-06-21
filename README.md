@@ -1,10 +1,8 @@
 # Static - Static website generator
 
 ![Header](http://image-missing.org/image.png)
-<<<<<<< HEAD
+
 A painless static website generator for you. Very lightweight to be easy, secure and low CPU usage alternative to WordPress and Jekyll, without need to have database and other stuff.
-=======
->>>>>>> dev
 
 ## DO NOT USE THIS! THIS IS A FULLY EXPERIMENTAL VERSION!
 
@@ -18,15 +16,15 @@ A very clear and lightweight setup, exclusively for Linux users.
 ### Dependencies
 You will need only few basic things:
 
-<<<<<<< HEAD
+
 * A text editor (recommended: Atom)
 * Git (recommended for quick start install)
 * Linux (only Linux for the moment, but it will change...)
-=======
+
 * Atom
 * Git (recommended for quickstart install)
 * Linux (recommended)
->>>>>>> dev
+
 
 ### Install for Linux
 This is how to install this app, just run the following commands:

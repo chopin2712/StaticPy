@@ -1,10 +1,7 @@
 *.algo
-<<<<<<< HEAD
-=======
 var
 secure
 var.txt.bak
 test.*
 dir.txt
 *.np
->>>>>>> dev
