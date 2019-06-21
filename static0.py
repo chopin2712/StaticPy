@@ -100,16 +100,14 @@ while i != 0:
         print("What is the value of variable", v)
         a = input("[Type e for getting your editor]")
         if a == "e":
-            # OPEN EDITOR
-
-
-#       Remplacer v par e dans le document filename.html :
-        with fileinput.FileInput("*.html", inplace=True, backup='.bak') as file:
-            for line in file:
-                os.chdir(path)
-                open(filename)
-                print(line.replace(v, a), end='')
-        i = i + 1
+            print("not made yet")
+        else:
+            with fileinput.FileInput("var.txt", inplace=True, backup='.bak') as file:
+                for line in file:
+                    os.chdir(path)
+                    open(filename)
+                    print(line.replace(v, a), end='')
+            i = i + 1
 
 
 # Print the differents whays to get the script
