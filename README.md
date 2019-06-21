@@ -1,17 +1,16 @@
 # Static - Static website generator
+
 ![Header](http://image-missing.org/image.png)
+<<<<<<< HEAD
 A painless static website generator for you. Very lightweight to be easy, secure and low CPU usage alternative to WordPress and Jekyll, without need to have database and other stuff.
+=======
+>>>>>>> dev
+
+## DO NOT USE THIS! THIS IS A FULLY EXPERIMENTAL VERSION!
+
+A painless static website generator for you. Very lightweight to be easy, secure and low CPU usage alternative to Wordpress and Jekyll, without need to have database and other stuff.
 
 Works also using IPFS
-
-Only few commands lines to use it :
-
-```
-static new <website-name> <template>
-static post <post-name>
-static page <page-name>
-static publish
-```
 
 A very clear and lightweight setup, exclusively for Linux users.
 
@@ -19,16 +18,22 @@ A very clear and lightweight setup, exclusively for Linux users.
 ### Dependencies
 You will need only few basic things:
 
+<<<<<<< HEAD
 * A text editor (recommended: Atom)
 * Git (recommended for quick start install)
 * Linux (only Linux for the moment, but it will change...)
+=======
+* Atom
+* Git (recommended for quickstart install)
+* Linux (recommended)
+>>>>>>> dev
 
 ### Install for Linux
 This is how to install this app, just run the following commands:
 ```
-git clone http://localhost:3000/root/Static.git
-cd Static/install
-sudo sh install.sh
+git clone http://192.168.1.36:3000/root/Static.git
+cd Static
+python3.7 static.py
 ```
 
 ## Contribute
@@ -52,10 +57,9 @@ This is an Open Source app that YOU can contribute! Just follow these steps:
 ## Quick start
 
 Once you installed Static just follow the following steps:
-1. Run `static new <sitename> <template-name>` and follow the setup
-2. Run `static page <name>` to create a page (call it index to create an HOME page)
-3. Run `static post <name>` to create a post
-4. Run `static publish` when you want to publish your changes!
+1. Run `python3.7 static.py` then just answer which template you want to use
+2. Answer the questions to replace the variables
+3. Choose your uploading way.
 
 ## Credits and copyrights
 Under GNU license
