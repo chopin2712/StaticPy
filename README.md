@@ -2,8 +2,6 @@
 
 ![Header](http://image-missing.org/image.png)
 
-Test
-
 A painless static website generator for you. Very lightweight to be easy, secure and low CPU usage alternative to WordPress and Jekyll, without need to have database and other stuff.
 
 ## DO NOT USE THIS! THIS IS A FULLY EXPERIMENTAL VERSION!
